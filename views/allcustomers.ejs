@@ -1,0 +1,30 @@
+
+          <div class="container table-responsive py-5"> 
+            <table class="table table-bordered table-hover">
+              <thead >
+                <tr>
+                  <th scope="col">Acc No.</th>
+                  <th scope="col">Customer Name</th>
+                  <th scope="col">Email Id</th>
+                  <th scope="col">Balance</th>
+                  <!-- <th scope="col">
+                    Profile
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </th> -->
+    
+                </tr>
+              </thead>
+              <tbody>
+                <% customers.forEach(function(customer){ %>
+    
+                <tr>
+                  <th scope="row"><%=customer.accountNumber %></th>
+                  <td><%=customer.customerName %></td>
+                  <td><%=customer.emailId %></td>
+                  <td><%=customer.currentBalance %></td>
+                  </tr>
+                   <% }) %>
+              </tbody>
+            </table>
+            </div>
+    

@@ -1,0 +1,23 @@
+<%- include('navbar') %>
+<br>
+    <div class="container jumbotron ">
+        <h1 class="mb-4 text-center">Deposit Money</h1>
+<form action="/customers/deposit" method="POST" autocomplete="off">
+    <div class="form-group">
+        <label for="title">Enter Account Number</label>
+        <input type="text"  required name="accountNumber" id="accountNumber" class="form-control" autcomplete='off' >
+    
+    </div>
+    
+    <div class="form-group">
+        <label for="title">Enter Amount to deposit</label>
+        <input type="text"  required name="amount" id="amount" class="form-control" autcomplete='off' >
+    
+    </div>
+    <button type="submit" class="btn btn-primary">Deposit Money</button>        </form>
+    </div>
+    <%- include('allCustomers') %>
+    <%- include('footer') %> 
+
+</body>
+</html>

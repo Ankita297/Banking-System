@@ -1,0 +1,33 @@
+<%- include('navbar') %>
+<br>
+<div class="container jumbotron">
+        <h1 class="mb-4">Enter details</h1>
+<form action="/customers/new" method="POST" autocomplete="off">
+    <div class="form-group">
+        <label for="title">Enter Account Number</label>
+        <input type="text"  required name="accountNumber" id="accountNumber" class="form-control" autcomplete='off' >
+    
+    </div>
+    
+    <div class="form-group">
+        <label for="title">Enter Customer Name</label>
+        <input type="text"  required name="customerName" id="customName" class="form-control" autcomplete='off' >
+    
+    </div>
+    <div class="form-group">
+        <label for="title">Enter Mail Id</label>
+        <input type="email"  required name="emailId" id="emailId" class="form-control" autcomplete='off' >
+    
+    </div>
+    <div class="form-group">
+        <label for="title">Enter Customer Balance</label>
+        <input type="text"  required name="currentBalance" id="currentBalance" class="form-control" autcomplete='off' >
+    
+    </div>
+    <a href="/" class="btn btn-secondary">Close</a>
+    <button type="submit" class="btn btn-primary">Add Customer</button>        </form>
+    </div>
+    <%- include('footer') %> 
+
+</body>
+</html>
